@@ -42,23 +42,28 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
+<img width="340" height="147" alt="Screenshot 2026-05-25 110421" src="https://github.com/user-attachments/assets/e6822d2f-5b5e-4ad4-a36e-a54d3b8c9ac0" />
 
 
 
 cat < file2
 ## OUTPUT
 
+<img width="319" height="205" alt="Screenshot 2026-05-25 111600" src="https://github.com/user-attachments/assets/933d3773-9f41-4468-ae8c-51a7f1ecec6d" />
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+ <img width="382" height="77" alt="Screenshot 2026-05-25 111747" src="https://github.com/user-attachments/assets/106f3742-86d3-4ca7-ab17-f188f030c8a3" />
+
 comm file1 file2
  ## OUTPUT
+<img width="411" height="207" alt="Screenshot 2026-05-25 111912" src="https://github.com/user-attachments/assets/b0fae319-dac0-458a-9579-fc80e578690d" />
 
  
 diff file1 file2
 ## OUTPUT
+<img width="349" height="271" alt="Screenshot 2026-05-25 112039" src="https://github.com/user-attachments/assets/e5d9b745-9903-44aa-ac73-3f33ea92d981" />
 
 
 #Filters
@@ -84,15 +89,18 @@ cut -c1-3 file11
 ## OUTPUT
 
 
+<img width="305" height="125" alt="Screenshot 2026-05-25 112323" src="https://github.com/user-attachments/assets/808fc93a-ffaf-4957-bd49-8b7a067a4972" />
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
 
+<img width="382" height="146" alt="Screenshot 2026-05-25 112937" src="https://github.com/user-attachments/assets/b356b272-0ac5-4ea3-bd25-894dea3e573d" />
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
+<img width="357" height="156" alt="Screenshot 2026-05-25 112525" src="https://github.com/user-attachments/assets/2d5a5e39-cebb-443d-9704-0f1d2f957e64" />
 
 
 cat < newfile 
@@ -108,11 +116,14 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
+<img width="249" height="98" alt="Screenshot 2026-05-25 230511" src="https://github.com/user-attachments/assets/00b8ea35-4bed-4a23-ac89-5fa81b8f4cdf" />
 
 
 grep hello newfile 
 ## OUTPUT
 
+
+<img width="298" height="69" alt="Screenshot 2026-05-25 230619" src="https://github.com/user-attachments/assets/721d8f2b-8870-48dd-8e3d-9957c701366a" />
 
 
 
@@ -120,10 +131,14 @@ grep -v hello newfile
 ## OUTPUT
 
 
+<img width="298" height="69" alt="Screenshot 2026-05-25 230619" src="https://github.com/user-attachments/assets/0704cfcf-e6b3-4510-9e89-ede21c341d34" />
+
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
+
+<img width="625" height="96" alt="Screenshot 2026-05-25 230751" src="https://github.com/user-attachments/assets/de973cba-9af8-4dec-975a-3cfe47b13894" />
 
 
 
@@ -131,11 +146,15 @@ cat newfile | grep -i -c "hello"
 ## OUTPUT
 
 
+<img width="625" height="96" alt="Screenshot 2026-05-25 230751" src="https://github.com/user-attachments/assets/fd5fb292-9b6a-4488-aab7-f594be564dd3" />
+
 
 
 grep -R ubuntu /etc
 ## OUTPUT
 
+
+<img width="809" height="256" alt="Screenshot 2026-05-26 004444" src="https://github.com/user-attachments/assets/cc35d5b8-fbca-4016-8a11-ce5fcafc5568" />
 
 
 grep -w -n world newfile   
@@ -165,14 +184,25 @@ egrep -w 'Hello|hello' newfile
 ## OUTPUT
 
 
+<img width="418" height="98" alt="Screenshot 2026-05-26 004044" src="https://github.com/user-attachments/assets/fda2f4e5-bb75-4dae-9899-e73216851807" />
+
+
+
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
 
 
+
+<img width="386" height="100" alt="Screenshot 2026-05-26 004051" src="https://github.com/user-attachments/assets/f2886fba-ac73-4a9c-9641-a7b406118679" />
+
+
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
+
+
+<img width="407" height="98" alt="Screenshot 2026-05-26 005517" src="https://github.com/user-attachments/assets/56fc75a4-dc5c-4210-8e3e-4d062ea32456" />
 
 
 
@@ -181,42 +211,66 @@ egrep '(^hello)' newfile
 ## OUTPUT
 
 
+<img width="317" height="75" alt="Screenshot 2026-05-26 005537" src="https://github.com/user-attachments/assets/61ee8c00-6956-4162-a422-9499977b0640" />
+
+
 
 egrep '(world$)' newfile 
 ## OUTPUT
 
 
+<img width="363" height="91" alt="Screenshot 2026-05-26 005551" src="https://github.com/user-attachments/assets/02118154-32fa-45b1-a2b2-3c63b443239f" />
+
 
 egrep '(World$)' newfile 
 ## OUTPUT
+
+<img width="396" height="76" alt="Screenshot 2026-05-26 005606" src="https://github.com/user-attachments/assets/15d14a22-978a-4426-9e6c-792a5961aa3e" />
+
+
 
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
 
 
+<img width="394" height="100" alt="Screenshot 2026-05-26 005621" src="https://github.com/user-attachments/assets/a605971f-62a2-4670-aa48-91e84f7033a1" />
+
+
+
 
 egrep '[1-9]' newfile 
 ## OUTPUT
 
+<img width="386" height="73" alt="Screenshot 2026-05-26 005652" src="https://github.com/user-attachments/assets/89d8680d-fc63-4ebd-afb8-8821e9588530" />
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
 
 
+<img width="393" height="79" alt="Screenshot 2026-05-26 005710" src="https://github.com/user-attachments/assets/577e1034-07de-4afb-b5ee-0318757ce098" />
+
+
 egrep 'Linux.*World' newfile 
 ## OUTPUT
+
+
+<img width="381" height="78" alt="Screenshot 2026-05-26 005727" src="https://github.com/user-attachments/assets/b5f366c5-844b-45ef-8186-8cfb51c1d69a" />
 
 
 egrep l{2} newfile
 ## OUTPUT
 
 
+<img width="348" height="91" alt="Screenshot 2026-05-26 005735" src="https://github.com/user-attachments/assets/1365be8d-76af-410f-a30f-cc2eb2509f05" />
+
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
 
+
+<img width="369" height="120" alt="Screenshot 2026-05-26 005744" src="https://github.com/user-attachments/assets/2cdfb1aa-e45d-46e0-b7e1-827343395483" />
 
 cat > file23
 ```
@@ -232,13 +286,20 @@ cat > file23
 ```
 
 
+<img width="366" height="266" alt="Screenshot 2026-05-26 005752" src="https://github.com/user-attachments/assets/4d938386-8c52-467c-a576-adf42771850f" />
+
+
 sed -n -e '3p' file23
 ## OUTPUT
+
+<img width="396" height="69" alt="Screenshot 2026-05-26 005804" src="https://github.com/user-attachments/assets/3ee7eddb-1c0b-474f-99c6-25571ba3d6be" />
 
 
 
 sed -n -e '$p' file23
 ## OUTPUT
+
+<img width="347" height="72" alt="Screenshot 2026-05-26 005811" src="https://github.com/user-attachments/assets/9a6d1410-c799-498f-81d7-40de4d95b804" />
 
 
 
@@ -246,19 +307,27 @@ sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 
 
+<img width="464" height="280" alt="Screenshot 2026-05-26 005819" src="https://github.com/user-attachments/assets/abede824-2da3-4e4e-bfc7-f07ccdc50a6d" />
+
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 
+
+<img width="432" height="273" alt="Screenshot 2026-05-26 005831" src="https://github.com/user-attachments/assets/af183d46-0449-47ef-8bae-d1191c5af51e" />
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
 
+<img width="414" height="80" alt="Screenshot 2026-05-26 005846" src="https://github.com/user-attachments/assets/610f2b89-fa6c-4146-bdff-f245459cc3a8" />
+
 
 sed -n -e '1,5p' file23
 ## OUTPUT
+
+<img width="456" height="177" alt="Screenshot 2026-05-26 005856" src="https://github.com/user-attachments/assets/ddee6fea-4dad-4809-ac7b-73f9d36b0037" />
 
 
 
@@ -266,20 +335,28 @@ sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
 
+<img width="489" height="124" alt="Screenshot 2026-05-26 005903" src="https://github.com/user-attachments/assets/87d3936a-e22e-489e-8132-26e257bde052" />
+
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
 
 
+<img width="475" height="95" alt="Screenshot 2026-05-26 005911" src="https://github.com/user-attachments/assets/689cfeeb-493a-45ca-8b02-cee15cd20080" />
+
 
 seq 10 
 ## OUTPUT
 
 
+<img width="429" height="300" alt="Screenshot 2026-05-26 005920" src="https://github.com/user-attachments/assets/1afe4fcc-0393-4f6c-a983-a62e164aaaa6" />
+
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
+
+<img width="365" height="129" alt="Screenshot 2026-05-26 005928" src="https://github.com/user-attachments/assets/ce352d81-f5f2-4c4d-85d6-5ddb47889eba" />
 
 
 
@@ -287,26 +364,38 @@ seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
 
+<img width="322" height="129" alt="Screenshot 2026-05-26 005944" src="https://github.com/user-attachments/assets/450bd4f4-05da-41a8-a34b-0da6858963d8" />
+
 
 seq 3 | sed '2a hello'
 ## OUTPUT
 
+
+<img width="346" height="155" alt="Screenshot 2026-05-26 005952" src="https://github.com/user-attachments/assets/53a82c25-c345-4f14-9091-5577dccf4cdd" />
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 
 
+<img width="286" height="129" alt="Screenshot 2026-05-26 010003" src="https://github.com/user-attachments/assets/8590d152-67e1-4d0b-a143-d1117aa767e0" />
+
 seq 10 | sed '2,9c hello'
 ## OUTPUT
+
+<img width="368" height="124" alt="Screenshot 2026-05-26 010015" src="https://github.com/user-attachments/assets/62afb49b-309a-4556-b3ee-e30b5d0b45b7" />
 
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
 
+<img width="460" height="123" alt="Screenshot 2026-05-26 010034" src="https://github.com/user-attachments/assets/fb909ff6-faef-4831-ba3d-88799852bb5e" />
+
 
 sed -n '2,4{s/$/*/;p}' file23
+
+<img width="402" height="118" alt="Screenshot 2026-05-26 010047" src="https://github.com/user-attachments/assets/c0a5f45f-a881-4dda-9aaf-b832e36e7d3c" />
 
 
 #Sorting File content
@@ -357,16 +446,22 @@ www. mrcet.... com
 cat urllist.txt | tr -d ' '
  ## OUTPUT
 
+<img width="382" height="175" alt="Screenshot 2026-05-26 011341" src="https://github.com/user-attachments/assets/e0da2841-a979-44cd-9816-2b0befb5eb34" />
+
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 
 
+<img width="557" height="275" alt="Screenshot 2026-05-26 011348" src="https://github.com/user-attachments/assets/25338f55-172f-4f74-98a5-049020918c50" />
+
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
+
+<img width="373" height="153" alt="Screenshot 2026-05-26 011405" src="https://github.com/user-attachments/assets/017e5ecd-a278-4b8d-a39f-d97c020f3f4b" />
 
 
 mkdir backupdir
@@ -378,15 +473,21 @@ cd backupdir
 tar -tvf backup.tar
 ## OUTPUT
 
+<img width="408" height="156" alt="Screenshot 2026-05-26 011419" src="https://github.com/user-attachments/assets/2a29bf2d-9802-4879-9738-84d16a7a080c" />
+
 
 tar -xvf backup.tar
 ## OUTPUT
+
+<img width="553" height="165" alt="Screenshot 2026-05-26 011426" src="https://github.com/user-attachments/assets/185d4cad-3f3e-46e7-8aac-1ae310281f46" />
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+
+ <img width="559" height="49" alt="Screenshot 2026-05-26 011441" src="https://github.com/user-attachments/assets/84cf511e-8abd-4c0b-ad85-5ecef73e55ec" />
+
 gunzip backup.tar.gz
 ## OUTPUT
 
